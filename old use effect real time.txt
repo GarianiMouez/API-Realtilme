@@ -1,0 +1,38 @@
+
+  // useEffect(() => {
+  //   let counter: number = 0;
+  //   let currentValue: number = 0;
+
+  //   const updateDataInterval = setInterval(() => {
+  //     if (counter % 3 === 0) {
+  //       currentValue = Math.floor(Math.random() * 2);
+  //     }
+
+  //     const newData = {
+  //       x: createDateForXaxis(),
+  //       y: currentValue,
+  //     };
+
+  //     console.log("new data ::::", newData);
+
+  //     setState((prevState) => ({
+  //       series: [
+  //         {
+  //           name: prevState.series[0].name,
+  //           data:
+  //             counter % 2 === 0
+  //               ? [...prevState.series[0].data.slice(1), newData]
+  //               : [...prevState.series[0].data, newData],
+  //         },
+  //       ],
+  //     }));
+
+  //     counter++;
+  //     // if (counter === 10) {
+  //     //   counter = 0;
+  //     // }
+  //     // console.log(counter);
+  //     // console.log(createDate());
+  //   }, 1000);
+  //   return () => clearInterval(updateDataInterval);
+  // }, []);
